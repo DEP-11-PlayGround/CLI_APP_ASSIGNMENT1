@@ -23,8 +23,9 @@ public class AppAssignment1 {
         final String ERROR_MSG = String.format("\t%s%s%s\n", COLOR_RED_BOLD, "%s", RESET);
         final String SUCCESS_MSG = String.format("\t%s%s%s\n", COLOR_GREEN_BOLD, "%s", RESET);
 
-        String[] customerIds = new String[0];
-        String[] customerNames = new String[0];
+        String[] account = new String[0];
+        String[] Ids = new String[0];
+        String[] DEPO = new String[0];
 
         String screen = DASHBOARD;
         
