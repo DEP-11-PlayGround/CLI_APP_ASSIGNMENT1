@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BankApp {
+public class AppAssignment1 {
     private static final Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -123,6 +123,18 @@ public class BankApp {
                             System.out.println();
                             
                         } else {
+
+                        System.out.printf(ERROR_MSG, "Not Sufficient Amount In Your A/C");
+                            valid=false;
+                            continue;
+                        }
+                    } while (!valid);
+
+                    int[] NewDepo = new int[DEPO.length + 1];
+                    for (int i = 0; i < DEPO.length; i++) {
+
+                        NewDepo[i] = DEPO[i];
+                    }
         }
     }while(true);
     
