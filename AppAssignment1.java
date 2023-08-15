@@ -108,6 +108,21 @@ public class BankApp {
                     }
                     newAcNames[newAcNames.length - 1] = name;
                     account = newAcNames;
+
+                    // Initial Deposit
+
+                    do {
+                        valid = true;
+                        System.out.println();
+                        System.out.print("Enter your Deposited Amount Here :");
+                        deposit = SCANNER.nextInt();
+                        SCANNER.nextLine();
+
+                        if (deposit > 5000) {
+                            System.out.println("Initial Deposit :" + deposit);
+                            System.out.println();
+                            
+                        } else {
         }
     }while(true);
     
