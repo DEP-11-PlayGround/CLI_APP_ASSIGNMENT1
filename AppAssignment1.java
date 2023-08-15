@@ -135,11 +135,19 @@ public class AppAssignment1 {
 
                         NewDepo[i] = DEPO[i];
                     }
+                    NewDepo[NewDepo.length - 1] = deposit;
+                    DEPO = NewDepo;
+
+                    System.out.printf(SUCCESS_MSG,
+                                    String.format("%s:%s has been saved successfully", account.length, name));
+                    System.out.print("\tDo you want to continue adding (Y/n)? ");
+                    if (SCANNER.nextLine().strip().toUpperCase().equals("Y"))
+                        continue;
+                    ;
+                    screen = DASHBOARD;
+                    break;
         }
     }while(true);
     
-
-
-
     }
 }
